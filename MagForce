@@ -1,0 +1,46 @@
+ClrHome
+0→X
+0→Y
+Disp "CHARGE OF INTERESTED POINT"
+Input "CHARGE:",P
+Disp "HOW MANY CHARGES ACTING"
+Input "NUMBER:",N
+For(I,1,N,1)
+Disp "INPUT FORCE"
+Input "FORCE:",A
+Disp "ANGLE OF FORCE"
+Input "θ:",B
+Disp "DISTANCE BETWEEN FORCES"
+Input "DIST:",D
+Disp "DIRECTION OF FORCE U OR D OR 0 AND R OR L OR 0"
+Input "VERTICAL:",V
+Input "HORIZONTAL:",H
+(9*^(9))(abs(P))(abs(A))/(D²)→M
+Disp "TEST"
+If V=U
+Disp "TEST2"
+Disp "TEST3"
+If H=L
+Disp "TEST4"
+Disp "TEST5"
+X+(­Msin(B))→X
+Disp "TEST6"
+Y+Mcos(B)→Y
+Disp "TEST7"
+Else
+Disp "TEST8"
+X+(Msin(B))→X
+Disp "TEST9"
+Y+Mcos(B)→Y
+End
+Else
+If H=L
+X+(­Msin(B))→X
+Y+(­Mcos(B))→Y
+Else
+X+(Msin(B))→X
+Y+(­Mcos(B))→Y
+End
+End
+End
+Disp √((X²)+(Y²))
