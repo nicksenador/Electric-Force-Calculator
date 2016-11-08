@@ -16,21 +16,12 @@ Disp "DIRECTION OF FORCE U OR D OR 0 AND R OR L OR 0"
 Input "VERTICAL:",V
 Input "HORIZONTAL:",H
 (9*^(9))(abs(P))(abs(A))/(D²)→M
-Disp "TEST"
 If V=U
-Disp "TEST2"
-Disp "TEST3"
 If H=L
-Disp "TEST4"
-Disp "TEST5"
 X+(­Msin(B))→X
-Disp "TEST6"
 Y+Mcos(B)→Y
-Disp "TEST7"
 Else
-Disp "TEST8"
 X+(Msin(B))→X
-Disp "TEST9"
 Y+Mcos(B)→Y
 End
 Else
